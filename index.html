@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <div class="page-container">
+        <div class="content-wrapper">
+            <header class="page-header">
+                <div >
+                    <textarea class="header-placeholder" name="" id=""></textarea>
+                </div>
+                <h1 class="header-title">검색</h1>
+                
+            </header>
+
+            <section class="travel-recommendations">
+                <h2 class="section-title">지역 주민이 추천한 여행지 모음🧳</h2>
+                <div class="region-filters">
+                    <div class="filter-tag active">전체</div>
+                    <div class="filter-tag">서울</div>
+                    <div class="filter-tag">경기</div>
+                    <div class="filter-tag">강원</div>
+                    <div class="filter-tag">경상</div>
+                    <div class="filter-tag">전라</div>
+                    <div class="filter-tag">제주</div>
+                    <div class="filter-tag">충청</div>
+                </div>
+                <div class="travel-grid">
+                    <div class="travel-card" data-region="서울">
+                        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/20a6abecde3b3f76daf724b84770bb9429341b43" alt="" class="travel-image">
+                        <div class="travel-card-title">연등축제</div>
+                    </div>
+                    <div class="travel-card" data-region="경상">
+                        <img src="../asset/travelimage2.png" alt="" class="travel-image">
+                        <div class="travel-card-title">금성산 고분군</div>
+                    </div>
+                    <div class="travel-card" data-region="울산">
+                        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/32d87a5275b92d8754861d332553feaa3c155748" alt="" class="travel-image">
+                        <div class="travel-card-title">울산대교 전망대</div>
+                    </div>
+                    <div class="travel-card" data-region="강원">
+                        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/0fcf358d01f648c527d9ecf51eebf2acb85d3a58" alt="" class="travel-image">
+                        <div class="travel-card-title">강릉 중앙시장</div>
+                    </div>
+                    <div class="travel-card" data-region="강원">
+                        <img src="../asset/travelimage5.png" alt="" class="travel-image">
+                        <div class="travel-card-title">정선 오장폭포</div>
+                    </div>
+                    <div class="travel-card" data-region="제주">
+                        <img src="../asset/travelimage6.png" alt="" class="travel-image">
+                        <div class="travel-card-title">제주 유채꽃밭</div>
+                    </div>
+                    <div class="travel-card" data-region="제주">
+                        <img src="../asset/travelimage7.png" alt="" class="travel-image">
+                        <div class="travel-card-title">제주 안덕계곡</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="popular-posts">
+                <h2 class="section-title">지금 커뮤니티에서 가장 Hot한 인기글🔥</h2>
+                <div class="posts-container">
+                    <article class="post-card">
+                        <div class="post-content">
+                            <div class="post-header">
+                                <div class="user-avatar"></div>
+                                <h3 class="post-title">새롭게 찾은 힐링 여행지</h3>
+                            </div>
+                            <p class="post-description">이번에 황금연휴를 맞아 여행을 떠났습니다. 관광지랑 체험활동 공유해드릴게요~</p>
+                            <div class="post-tags">
+                                <span class="post-tag">#장성 황룡강</span>
+                            </div>
+                        </div>
+                        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/bdffffdbd4022163cb5a33d6001ec130ee9e6144" alt="" class="post-image">
+                    </article>
+
+                    <article class="post-card">
+                        <div class="post-content">
+                            <div class="post-header">
+                                <div class="user-avatar"></div>
+                                <h3 class="post-title">해운대 여행 예정 있는 사람 들어와봐</h3>
+                            </div>
+                            <p class="post-description">해운대 거주 27년차 주민으로서 주민만 아는 숨겨진 맛집 딱 추천해줄게.</p>
+                            <div class="post-tags">
+                                <span class="post-tag">#해운대</span>
+                                <span class="post-tag">#주간 미션</span>
+                            </div>
+                        </div>
+                        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/ec20bbbea4cf7fcf507f9185bfec8ec37a30634e" alt="" class="post-image">
+                    </article>
+
+                    <article class="post-card">
+                        <div class="post-content">
+                            <div class="post-header">
+                                <div class="user-avatar"></div>
+                                <h3 class="post-title">산에서 한 달 살기 후기 남겨요</h3>
+                            </div>
+                            <p class="post-description">요즘 힘들고 지쳐서 한 달 동안 지리산 민박집에서 살아보았는데요...</p>
+                            <div class="post-tags">
+                                <span class="post-tag">#지리산</span>
+                                <span class="post-tag">#마이너 리뷰 끌올</span>
+                            </div>
+                        </div>
+                        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/51ff30f6dc8c69bbc578933e215f5835a6371629" alt="" class="post-image">
+                    </article>
+                </div>
+            </section>
+
+            <section class="useful-info">
+                <h2 class="section-title">유용한 정보와 혜택 알아가세요!💸</h2>
+                <div class="info-cards">
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/08010af85138ab969f7db4adc7e7aebc77318511" alt="" class="info-image">
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/3c8b273ef856f657a4673bbca87ef208a4c31da8" alt="" class="info-image">
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/08010af85138ab969f7db4adc7e7aebc77318511" alt="" class="info-image">
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/3c8b273ef856f657a4673bbca87ef208a4c31da8" alt="" class="info-image">
+                </div>
+            </section>
+        </div>
+
+        <footer class="bottom-navigation">
+            <div class="nav-container">
+                <div class="nav-item active">홈</div>
+                <a href="#">
+                    <div class="nav-item">커뮤니티</div>
+                </a>
+                <a href="#">
+                    <div class="nav-item">트래블 맵</div>
+                </a>
+                <a href="#">
+                    <div class="nav-item">마이페이지</div>
+                </a>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        //태그 누르면 활성화
+        const tags = document.querySelectorAll('.filter-tag');
+        tags.forEach(tag => {
+        tag.addEventListener('click', e => {
+            if (e.currentTarget.classList.contains('active')) {
+            tags.forEach(t => t.classList.remove('active'));
+            return;
+            }
+            tags.forEach(t => t.classList.remove('active'));
+            e.currentTarget.classList.add('active');
+            change_filter(e.currentTarget)
+
+        });
+        });
+
+        //textarea 줄바꿈 방지
+        const textarea = document.querySelector('textarea');
+        textarea.addEventListener('keydown', e => {
+        if (e.key === 'Enter') {
+            e.preventDefault(); // 줄바꿈 방지
+        }
+        });
+
+        //info-cards 드래그 기능
+        const container = document.querySelector('.info-cards');
+
+        //카테고리 필터 태그 설정 -> 선택한 지역만 보여주기
+        let filter = '전체'
+        
+        //지역 보여줄 때 최대 4개까지만 피드에 허용
+        let cards = document.querySelectorAll('.travel-card');
+        let minus_length = cards.length-4
+        for (var i = 1; i<minus_length+1; i++){
+            cards[cards.length-i].classList.add('hidden')
+        }
+        
+        function change_filter(tag){
+            filter = tag.innerHTML
+            console.log('filter:'+filter)
+
+            let cards = document.querySelectorAll('.travel-card');
+            let shown = 0
+            cards.forEach(card => {
+                const region = card.dataset.region;
+                
+                console.log('초기 shown: '+shown)
+                    if (filter === '전체' || region === filter) {
+                    card.classList.remove('hidden');
+                    shown+=1} else {
+                    card.classList.add('hidden'); //전체 혹은 자기 값 아니면 숨기기
+                    }
+                    //노출값 4개 넘었으면 숨기기
+                    let minus_length = shown-4
+                    for (var i = 1; i<minus_length+1; i++){
+                        cards[cards.length-i].classList.add('hidden')
+                    }
+                });
+
+        }
+
+    </script>
+</body>
+</html>
