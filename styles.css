@@ -1,0 +1,372 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: white;
+    color: #1c1917; /* stone-900 */
+    line-height: 1.5;
+}
+
+.page-container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+    padding: 1rem; /* p-4 */
+    position: relative;
+    padding-bottom: 5rem; /* Space for fixed footer */
+}
+
+.content-wrapper {
+    max-width: 56rem; /* max-w-4xl */
+    margin: 0 auto;
+}
+
+/* Header Styles */
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.5rem; /* mb-10 */
+}
+
+.header-placeholder {
+    all: unset;
+    height: 6rem; /* h-24 */
+    background-color: #d7d7d7; /* bg-gray-100 */
+    border-radius: 0.5rem; /* rounded-lg */
+    width: 700px;
+    font-size: 2.5rem;            /* 글자 크기 */
+    font-family: 'Noto Sans KR', sans-serif;  /* 글꼴 */
+    color: #333;                /* 글자 색 */
+    padding: 15px 16px;         /* 내부 여백 */
+    line-height: 1.5;  
+    padding: 1rem 1.5rem;
+    box-sizing: border-box;
+}
+
+.header-title {
+    font-size: 3rem; /* text-5xl */
+    font-weight: 500; /* font-medium */
+    letter-spacing: -0.025em; /* tracking-tight */
+    line-height: 72px; /* leading-[72px] */
+    color: #1c1917; /* text-stone-900 */
+    position: relative;
+    right: 40px;
+}
+
+/* Section Styles */
+.section-title {
+    font-size: 1.5rem; /* text-2xl */
+    font-weight: 700; /* font-bold */
+    letter-spacing: -0.025em; /* tracking-tight */
+    line-height: 2.25rem; /* leading-9 */
+    color: #1c1917; /* text-stone-900 */
+    margin-bottom: 1rem; /* mb-4 */
+}
+
+/* Travel Recommendations Section */
+.travel-recommendations {
+    margin-bottom: 2.5rem; /* mb-10 */
+}
+
+.region-filters {
+    display: flex;
+    gap: 1rem; /* gap-4 */
+    overflow-x: auto;
+    margin-bottom: 1.5rem; /* mb-6 */
+}
+
+.filter-tag {
+    width: 6rem; /* w-20 */
+    height: 2rem; /* h-8 */
+    background-color: #e5e7eb; /* bg-gray-200 */
+    border-radius: 1rem; /* rounded-2xl */
+    color: #1c1917; /* text-stone-900 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 0.875rem;
+    cursor: pointer;
+}
+.filter-tag.active{
+    color: white !important;
+    background-color: #1c1917 !important; 
+    font-weight: bold;
+}
+
+.travel-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem; /* gap-4 */
+}
+.travel-card-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.travel-card {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.gradient{
+    position: absolute;
+    width: 100%; height: 100%;
+    background: #000000;
+    background: linear-gradient(357deg, rgba(0, 0, 0, 0.48) 0%, rgba(255, 255, 255, 0) 100%);
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+
+.travel-image {
+    width: 100%;
+    height: 300px; /* h-[240px] */
+    object-fit: cover;
+    
+    /* border-radius: 4px; rounded-[4px] */
+    /* border: 8px solid #FFF; border-[8px] border-[#FFF] */
+    /* box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.20), 0px 0px 2px 0px rgba(0,0,0,0.08), 0px 2px 6px 0px rgba(0,0,0,0.10); */
+}
+
+.travel-card-title {
+    position: absolute;
+    bottom: 30px; /* bottom-4 */
+    left: 30px; /* left-4 */
+    font-size: 1.5rem; /* text-2xl */
+    font-weight: 700; /* font-bold */
+    letter-spacing: -0.025em; /* tracking-tight */
+    line-height: 2.25rem; /* leading-9 */
+    color: white; /* text-white */
+}
+
+/* Popular Posts Section */
+.popular-posts {
+    margin-bottom: 2.5rem; /* mb-10 */
+}
+
+.posts-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* gap-6 */
+}
+
+.post-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.post-content {
+    flex: 1;
+}
+
+.post-header {
+    display: flex;
+    gap: 1rem; /* gap-4 */
+    align-items: center;
+    margin-bottom: 0.75rem; /* mb-3 */
+}
+
+.user-avatar {
+    width: 3rem; /* w-12 */
+    height: 2.75rem; /* h-11 */
+    background-color: #e5e7eb; /* bg-gray-200 */
+    border-radius: 1.5rem; /* rounded-3xl */
+}
+
+.post-title {
+    font-size: 1.875rem; /* text-3xl */
+    font-weight: 700; /* font-bold */
+    letter-spacing: -0.025em; /* tracking-tight */
+    line-height: 2.5rem; /* leading-10 */
+    color: #1c1917; /* text-stone-900 */
+}
+
+.post-description {
+    font-size: 1.5rem; /* text-2xl */
+    letter-spacing: -0.025em; /* tracking-tight */
+    line-height: 2.25rem; /* leading-9 */
+    color: #1c1917; /* text-stone-900 */
+    margin-bottom: 1rem; /* mb-4 */
+}
+
+.post-tags {
+    display: flex;
+    gap: 1rem; /* gap-4 */
+}
+
+.post-tag {
+    padding: 0.25rem 1rem; /* px-4 py-1 */
+    background-color: #e5e7eb; /* bg-gray-200 */
+    border-radius: 1rem; /* rounded-2xl */
+    color: #1c1917; /* text-stone-900 */
+}
+
+.post-image {
+    width: 169px; /* w-[169px] */
+    height: 174px; /* h-[174px] */
+    border-radius: 4px; /* rounded-[4px] */
+    border: 8px solid #FFF; /* border-[8px] border-[#FFF] */
+    box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.20), 0px 0px 2px 0px rgba(0,0,0,0.08), 0px 2px 6px 0px rgba(0,0,0,0.10);
+}
+
+/* Useful Info Section */
+.info-cards {
+    display: flex;
+    gap: 1rem; /* gap-4 */
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    padding: 1rem;
+    scroll-snap-type: x mandatory; /* 카드 하나씩 스냅되게 */
+    -webkit-overflow-scrolling: touch; /* 모바일 부드러운 스크롤 */
+}
+
+.info-image {
+    border-radius: 4px; /* rounded-[4px] */
+    border: 8px solid #FFF; /* border-[8px] border-[#FFF] */
+    box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.20), 0px 0px 2px 0px rgba(0,0,0,0.08), 0px 2px 6px 0px rgba(0,0,0,0.10);
+    flex: 0 0 auto; /* 줄지 않고 고정 너비 유지 */
+    height: 368px;
+    width: 254px;
+    border-radius: 12px;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+
+/* Bottom Navigation */
+.bottom-navigation {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-top: 1px solid #e5e7eb;
+    border: 2px solid rgba(0, 0, 0, 0.244);
+}
+
+.nav-container {
+    padding: 1.5rem 1rem; /* px-4 py-6 */
+    max-width: 56rem; /* max-w-4xl */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.nav-item {
+    font-size: 1.5rem; /* text-2xl */
+    letter-spacing: -0.025em; /* tracking-tight */
+    line-height: 2.25rem; /* leading-9 */
+    color: #1c1917; /* text-stone-900 */
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item.active {
+    font-weight: 700; /* font-bold */
+}
+
+/* Responsive Styles */
+@media (max-width: 640px) {
+    .travel-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 100px;
+        gap: 10px;
+    }
+
+    .travel-image{
+        height: 100px;
+    }
+    .travel-card-title{
+        font-size: 0.8rem;
+        bottom: 0px;
+        left: 10px;
+    }
+
+    .info-image {
+    border-radius: 1px; /* rounded-[4px] */
+    box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.20), 0px 0px 2px 0px rgba(0,0,0,0.08), 0px 2px 6px 0px rgba(0,0,0,0.10);
+    flex: 0 0 auto; /* 줄지 않고 고정 너비 유지 */
+    width: 100px; height: 135px;
+    border-radius: 12px;
+    border: 0px solid #FFF; /* border-[8px] border-[#FFF] */
+    }
+
+    .filter-tag{
+        width: 60px;
+        height: 20px;
+        font-size: 0.8rem;
+    }
+
+    .section-title{
+        font-size: 0.8rem;
+    }
+
+    .nav-container {
+        justify-content: space-around;
+    }
+    .nav-item{
+        width: auto;
+        font-size: 0.8rem;
+    }
+
+    header.page-header{
+        margin-bottom: 10px;
+
+    }
+    .header-placeholder {
+        width: 300px; height: 50px;
+        font-size: 30px;
+        padding: 10px;
+    }
+    .header-title{
+        font-size: 0.8rem;
+    }
+
+    .region-filters {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .post-title{
+        font-size: 0.8rem;
+        line-height: normal;
+    }
+    p.post-description{
+        font-size: 0.9rem;
+        line-height: normal;
+    }
+    span.post-tag{
+        width: auto;
+        height: 20px;
+        padding: auto 10px;
+        display: flex;
+        align-items: center;
+        font-size: 0.8rem;
+    }
+    .post-image{
+        border: 0px solid #FFF; /* border-[8px] border-[#FFF] */
+        width: 100px;
+        height: 100px;
+    }
+}
+
+a{
+    all: none;
+    text-decoration: none;
+}
